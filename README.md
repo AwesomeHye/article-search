@@ -1,5 +1,5 @@
-# article-search
-API를 통해 ElasticSearch 검색
+# [article-app]
+article 검색 및 관리 API
 
 ## GET /articles
 : article 리스트 조회
@@ -15,3 +15,10 @@ API를 통해 ElasticSearch 검색
 
 ## DELETE /{articleNumber}
 : article 삭제
+
+
+# [article-elasticsearch]
+: elasticsearch 모듈
+
+1) 인덱스 생성
+2) 도큐먼트 검색, 색인, 수정, 삭제
