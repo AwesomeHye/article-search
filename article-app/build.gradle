@@ -1,0 +1,7 @@
+bootJar { enabled = true}
+jar { enabled = false}
+
+dependencies {
+    compile project(':article-elasticsearch')
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+}

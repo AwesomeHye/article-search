@@ -1,0 +1,6 @@
+bootJar { enabled = false}
+jar { enabled = true}
+
+dependencies {
+    compile "org.elasticsearch.client:elasticsearch-rest-high-level-client:${elasticsearchVersion}"
+}

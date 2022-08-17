@@ -1,0 +1,31 @@
+spring:
+  profiles:
+    active: local
+
+---
+spring:
+  profiles: local
+
+elasticsearch:
+  article:
+    alias: article
+    port: 9200
+    host: http://localhost:${elasticsearch.article.port}
+    connectionTimeout: 5000
+    socketTimeout: 3000
+    connectionRequestTimeout: 3000
+
+---
+spring:
+  profiles: test
+
+elasticsearch:
+  article:
+    alias: article
+    port: 32880
+    host: http://localhost:${elasticsearch.article.port}
+    connectionTimeout: 5000
+    socketTimeout: 3000
+    connectionRequestTimeout: 3000
+
+
